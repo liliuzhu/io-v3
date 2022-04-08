@@ -1,0 +1,128 @@
+{
+  "status": 0,
+  "data": {
+    "banner": [
+      {
+        "title": "案件管理系统",
+        "desc": "针对律师事务所诉讼案件信息的管理系统。主要参与该系统PC端1.0版本的信息管理功能。",
+        "href": "/static/view/project_3D/index.html?name=case",
+        "imgSrc": "/static/index/banner/case.jpg"
+      },
+      {
+        "title": "案件管理系统APP",
+        "desc": "该项目与案件管理系统配套使用，主要运用APICloud开发框架对移动端的案件证物信息采集系统进行混合式开发、迭代更新以及App2.0版本的重构。",
+        "href": "/static/view/project_3D/index.html?name=caseApp",
+        "imgSrc": "/static/index/banner/caseApp.jpg"
+      },
+      {
+        "title": "无纸化会议系统",
+        "desc": "具有实时通讯与同步功能的会议系统，同时兼容Android、IOS、PC三大设备平台，其中 Android与IOS采用原生+H5的混合模式开发。设备之间的通信与同步均通过webSocket实现，其中客户端的同步参会主要应用H5的canvas元素来实现画板同步。",
+        "href": "/static/view/project_3D/index.html?name=meeting",
+        "imgSrc": "/static/index/banner/meeting.jpg"
+      },
+      {
+        "title": "创业之家-创业实训平台",
+        "desc": "使用Bootstrop+jQuery快速实现UI设计的学员系统，以及教师与管理员系统，然后与Tomcat+mySQL与后台联调，利用jQuery+原生JS实现动态数据交互。",
+        "href": "/static/view/project_3D/index.html?name=startUp",
+        "imgSrc": "/static/index/banner/startUp.jpg"
+      },
+      {
+        "title": "生涯发展指导信息化平台",
+        "desc": "该项目为一个综合性的大型管理系统，系统功能较多，内容较为繁杂，其中用的工具也是不少，前端主要技术栈Bootstrap+jQuery+DataTables+fullCalendar等。其目的主要是帮助学生提高自我认识，并对学生的生涯规划积极引导",
+        "href": "/static/view/project_3D/index.html?name=career",
+        "imgSrc": "/static/index/banner/career.jpg"
+      },
+      {
+        "title": "宝利明威工单系统",
+        "desc": "使用Bootstrap+jQuery快速实现系统整体框架与风格，并不断优化升级",
+        "href": "/static/view/project_3D/index.html?name=baolimingwei",
+        "imgSrc": "/static/index/banner/baolimingwei.jpg"
+      },
+      {
+        "title": "瀚星达项目管理系统",
+        "desc": "使用Bootstrap+jQuery快速实现系统整体框架与风格。",
+        "href": "/static/view/project_3D/index.html?name=hanxingda",
+        "imgSrc": "/static/index/banner/hanxingda.jpg"
+      },
+      {
+        "title": "模拟饿了么2017版",
+        "desc": "参考饿了么官网2017版，利用Vue全家桶+webpack+mint-UI+，实现饿了么的几个主要功能页面的友好交互，并对此版本做了代理服务器版和mock版，点击此处可以查看mock版",
+        "href": "/static/view/project_3D/index.html?name=elm2017",
+        "imgSrc": "/static/index/banner/elm2017.jpg"
+      },
+      {
+        "title": "模拟饿了么2016版商家页",
+        "desc": "利用Vue全家桶+webpack，模仿饿了么2016版本的商家也，并对此做了mock版，点击此处可以查看mock版",
+        "href": "/static/view/project_3D/index.html?name=elm2016",
+        "imgSrc": "/static/index/banner/elm2016.jpg"
+      },
+      {
+        "title": "简易商城系统",
+        "desc": "该系统采用前后端分离的开发模式，主要技术栈为MongodB+Node.js+Express+Vue全家桶+webpack+ES6",
+        "href": "/static/view/project_3D/index.html?name=simpleShop",
+        "imgSrc": "/static/index/banner/simpleShop.jpg"
+      },
+      {
+        "title": "简易博客系统",
+        "desc": "该系统采用前后端不分离的开发模式，主要技术栈为MongodB+Node.js+Express+ES6",
+        "href": "/static/view/project_3D/index.html?name=simpleBlog",
+        "imgSrc": "/static/index/banner/simpleBlog.jpg"
+      },
+      {
+        "title": "英特尔官网首页",
+        "desc": "主要利用BootStrap框架来搭建响应式网页，实现在不同的设备终端显示不同的页面效果，并使用动态样式语言Less定制BootStrap组件，实现所需要的样式。",
+        "href": "/static/Projects/intel/index.html",
+        "imgSrc": "/static/index/banner/Bootstrap.jpg"
+      },
+      {
+        "title": "小米首页",
+        "desc": "使用HTML + CSS3实现小米官网的静态页面呈现以及部分的动画功能，大量运用JQuery中的API和原生JavaScript操作节点对象完成与用户动态交互的动画功能。",
+        "href": "/static/Projects/mi/index.html",
+        "imgSrc": "/static/index/banner/mi.jpg"
+      },
+      {
+        "title": "京东系列网页",
+        "desc": "使用JavaScript + HTML5 + CSS 实现京东网上商城首页的商品展示与商品详情页静态样式布局，并使用原生JavaScript实现各种动态效果，如：图片轮播、图片放大镜效果、转盘抽奖功能等。",
+        "href": "/static/Projects/jd/jd_index/jd_index.html",
+        "imgSrc": "/static/index/banner/jd.jpg"
+      },
+      {
+        "title": "开饭啦App",
+        "desc": "主要运用AngularJS与jQuery Mobile实现手机页面之间点击跳转与滑动跳转，手机订餐APP菜单列表、菜品详情、下单及查询订单功能。",
+        "href": "/static/view/project_3D/index.html?name=kaiFanLaApp",
+        "imgSrc": "/static/index/banner/kaiFanLaApp.jpg"
+      },
+      {
+        "title": "开饭啦Web",
+        "desc": "开饭啦App的网页版。主要运用AngularJS与BootStrap实现手机页面之间点击跳转，手机订餐APP菜单列表、菜品详情、下单及查询订单功能。",
+        "href": "http://liliuzhu.applinzi.com",
+        "imgSrc": "/static/index/banner/kaiFanLaWeb.jpg"
+      }
+    ],
+    "homePortfolio": {
+      "desc": "主要作品为知名电商首页静态页面，响应式网页，Web小游戏，移动端WebApp...",
+      "portfolio": [
+        {
+          "name": "知名网站",
+          "href": "/static/Projects/mi/index.html",
+          "imgSrc": "/static/index/Img/mi_thumb.png"
+        },
+        {
+          "name": "游戏",
+          "href": "/static/Projects/plane/index.html",
+          "imgSrc": "/static/index/Img/game1.png"
+        },
+        {
+          "name": "个人主页",
+          "href": "#",
+          "imgSrc": "/static/index/Img/person-thumb.png"
+        },
+        {
+          "name": "开饭啦订餐网",
+          "href": "http://liliuzhu.applinzi.com",
+          "imgSrc": "/static/index/Img/web_thumb.png"
+        }
+      ]
+    }
+  }
+}

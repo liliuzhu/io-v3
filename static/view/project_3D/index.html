@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>项目详情展示3D</title>
+    <link rel="icon" href="../../favicon.ico"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="../../js/compatible/html5shiv.min.js"></script>
+    <script type="text/javascript" src="../../js/compatible/respond.min.js"></script>
+    <script type="text/javascript" src="../../js/compatible/DOMAssistantCompressed-2.7.4.js"></script>
+    <script type="text/javascript" src="../../js/compatible/ie-css3.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min-v3.3.7.css">
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: #002800;
+            position: relative;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .app {
+            padding-top: 20vh;
+            position: relative;
+            height: 100%;
+        }
+
+        .title, .downLoadApp {
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+
+        .title {
+            top: 1vh;
+        }
+
+        .downLoadApp {
+            bottom: 1vh;
+        }
+
+        .downLoadApp a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 1em;
+        }
+
+        .downLoadApp a:hover {
+            color: #bbb;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            width: 60vw;
+            height: 60vh;
+        }
+
+        li {
+            width: 80%;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        li:hover {
+            -webkit-box-shadow: 0 0 10px #bbb;
+            -moz-box-shadow: 0 0 10px #bbb;
+            box-shadow: 0 0 10px #bbb;
+        }
+
+        li img {
+            width: 100%;
+            /*height: 100%;*/
+        }
+
+        ul.is_vertical li {
+            /*width: 30%;*/
+            width: auto;
+            height: 100%;
+        }
+
+        ul.is_vertical li img {
+            width: auto;
+            height: 100%;
+        }
+
+        li.roundabout-in-focus {
+            /*cursor: default;*/
+        }
+
+        /*li span {*/
+        /*display: block;*/
+        /*padding-top: 6em;*/
+        /*}*/
+
+        .mask {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            z-index: 8;
+            visibility: hidden;
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+        }
+
+        .mask.mask_in {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition-duration: 0ms;
+            transition-duration: 0ms;
+        }
+
+        #carbonads-container .carbonad {
+            margin: 0 auto;
+        }
+
+        .platform {
+            width: 100vw;
+            height: 100vh;
+            background: -webkit-radial-gradient(circle, rgba(255, 255, 255, .5) 0%, rgba(100, 100, 100, .2) 50%, rgba(0, 0, 0, 0) 80%);
+            background: -o-radial-gradient(circle, rgba(255, 255, 255, .5) 0%, rgba(100, 100, 100, .2) 50%, rgba(0, 0, 0, 0) 80%);
+            background: -moz-radial-gradient(circle, rgba(255, 255, 255, .5) 0%, rgba(100, 100, 100, .2) 50%, rgba(0, 0, 0, 0) 80%);
+            background: radial-gradient(circle, rgba(255, 255, 255, .5) 0%, rgba(100, 100, 100, .2) 50%, rgba(0, 0, 0, 0) 80%);
+            position: absolute;
+            top: 30vh;
+            left: 0;
+            border-radius: 50%;
+            transform: rotateX(75deg);
+        }
+
+        .app .ban_l_btn, .app .ban_r_btn {
+            position: absolute;
+            top: 50%;
+            margin-top: -34px;
+            left: 0;
+            display: block;
+            width: 65px;
+            height: 68px;
+            background: url(./wid65Btn.png) 0 0;
+            z-index: 9;
+            overflow: hidden;
+        }
+        .app .ban_r_btn {
+            left: auto;
+            right: 0;
+            background-position: -65px 0;
+        }
+    </style>
+</head>
+<body>
+<div id="app" class="app">
+    <h2 class="title" v-if="currentProject.title" v-text="currentProject.title"></h2>
+    <ul :class="{'is_vertical':currentProject.is_vertical}">
+        <li v-show="currentProject.images&&loaded" v-for="(item,index) in currentProject.images" :key="index">
+            <img @load="imgLoad" :src="'./projectsImages/'+name+'/'+item"/>
+        </li>
+        <!--<li><img src="./img/statrtUp_2.png"/></li>-->
+        <!--<li><img src="./img/statrtUp_3.png"/></li>-->
+        <!--<li><img src="./img/statrtUp_4.png"/></li>-->
+        <!--<li><img src="./img/statrtUp_5.png"/></li>-->
+        <!--<li><img src="./img/statrtUp_6.png"/></li>-->
+    </ul>
+    <a href="javascript:void(0)" class="ban_l_btn"></a>
+    <a href="javascript:void(0)" class="ban_r_btn"></a>
+    <div class="platform"></div>
+    <div class="mask"></div>
+    <h3 class="downLoadApp">
+        <a :download="currentProject.name" v-if="currentProject.webUrl" target="_blank" :href="currentProject.webUrl">前往<span
+            class="glyphicon glyphicon-link"></span></a>
+        <a v-if="currentProject.downloadApp" :href="currentProject.downloadApp">下载<span
+            class="glyphicon glyphicon-download-alt"></span></a>
+    </h3>
+</div>
+<script src="../../js/jquery.min-1.12.4.js"></script>
+<script src="./js/jquery.roundabout.js"></script>
+<!--<script src="./project_3D/js/jquery.roundabout-1.0.min.js"></script>-->
+<script src="./js/jquery.easing.1.3.js"></script>
+<script src="./js/vue-v2.3.0.js"></script>
+<!--<script src="./js/vue-resource-v2.3.0.js"></script>-->
+<script>
+    $(function () {
+        VueReady();
+    });
+
+    function error() {
+        window.location.href = '/';
+    }
+
+    //解析URL参数
+    function urlParse() {
+        var url = window.location.search;
+        var obj = {};
+        var reg = /[?&][^?&]+=[^?&]+/g;
+        var arr = url.match(reg);
+        if (arr) {
+            arr.forEach(function (item) {
+                var temArr = item.substring(1).split('=');
+                var key = decodeURIComponent(temArr[0]);
+                var val = decodeURIComponent(temArr[1]);
+                obj[key] = val;
+            });
+        }
+        return obj;
+    }
+
+    function VueReady() {
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                currentProject: {},
+                name: urlParse().name,
+                count: 0,
+                loaded: false
+            },
+            mounted: function () {
+                this.getProjects();
+            },
+            methods: {
+                getProjects: function () {
+                    var _this = this;
+                    $.ajax({
+                        url: './projectList.json',
+                        type: 'GET',
+                        success: function (res) {
+                            if (res.status === 0) {
+                                _this.setValue(res.result);
+                            } else {
+                                error();
+                            }
+                        },
+                        error: error
+                    });
+                },
+                setValue: function (result) {
+                    var current = result[this.name];
+                    if (current) {
+                        this.currentProject = current;
+                    } else {
+                        error();
+                    }
+                },
+                imgLoad: function (e) {
+                    this.count++;
+                    if (this.count === this.currentProject.images.length) {
+                        this.initRound();
+                    }
+                },
+                initRound: function () {
+                    $('ul').roundabout({
+                        shape: 'figure8',
+                        duration: 500, // 运动速度
+                        minScale: 0.0,//最小缩放
+                        maxScale: 1.0,
+                        btnPrev: ".ban_r_btn", // 右按钮
+                        btnNext: ".ban_l_btn", // 左按钮
+                        autoplay: true,        // 自动播放
+                        autoplayDuration: 3000,// 自动播放的时间
+                        minOpacity: 0.4,         //最小的透明度
+                        maxOpacity: 1,         //最大的透明度
+                        reflect: false,         // 为true时是从左向右移动，为false从右向左移动
+                        startingChild: 0,      // 默认的显示第几张图片
+                        autoplayInitialDelay: 100, // 从第几秒时，开始自动播放（默认毫秒）开始的第一次管用
+                        autoplayPauseOnHover: true, // 鼠标移入元素内是否自动播放，为true不播放，false还自动播放
+                        enableDrag: true       // 在移动端可以拖拽播放
+                    });
+                    this.loaded = true;
+                }
+            }
+        });
+    }
+</script>
+</body>
+</html>

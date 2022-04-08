@@ -1,0 +1,41 @@
+{
+  "status":0,
+  "data": {
+    "portfolioTypeList":[
+      {"code":"*", "name":"全部"},
+      {"code":".webApp", "name":"webApp"},
+      {"code":".app", "name":"app"},
+      {"code":".responsive", "name":"响应式"},
+      {"code":".station", "name":"知名网站"},
+      {"code":".store", "name":"线上商城"},
+      {"code":".game", "name":"游戏"},
+      {"code":".manage", "name":"管理系统"},
+      {"code":".personal", "name":"个人项目"}
+    ],
+    "portfolioList":[
+      {"name":"案件管理系统","href":"/static/view/project_3D/index.html?name=case","imgSrc":"/static/portfolio/img/case_thumb.png","category":"manage"},
+      {"name":"案件管理系统APP","href":"/static/view/project_3D/index.html?name=caseApp","imgSrc":"/static/portfolio/img/caseApp_thumb.png","category":"manage app responsive"},
+      {"name":"无纸化会议系统","href":"/static/view/project_3D/index.html?name=meeting","imgSrc":"/static/portfolio/img/meeting_thumb.png","category":"manage webApp responsive"},
+      {"name":"创业之家-创业实训平台","href":"/static/view/project_3D/index.html?name=startUp","imgSrc":"/static/portfolio/img/startUp_thumb.png","category":"manage"},
+      {"name":"生涯发展指导信息化平台","href":"/static/view/project_3D/index.html?name=career","imgSrc":"/static/portfolio/img/career_thumb.png","category":"manage"},
+      {"name":"宝利明威工单系统","href":"/static/view/project_3D/index.html?name=baolimingwei","imgSrc":"/static/portfolio/img/baolimingwei_thumb.png","category":"manage"},
+      {"name":"瀚星达项目管理系统","href":"/static/view/project_3D/index.html?name=hanxingda","imgSrc":"/static/portfolio/img/hanxingda_thumb.png","category":"manage"},
+      {"name":"模拟饿了么2017版","href":"/static/view/project_3D/index.html?name=elm2017","imgSrc":"/static/portfolio/img/elm2017_thumb.png","category":"station store personal responsive"},
+      {"name":"模拟饿了么2016版商家页","href":"/static/view/project_3D/index.html?name=elm2016","imgSrc":"/static/portfolio/img/elm2016_thumb.png","category":"station store personal"},
+      {"name":"简易商城系统","href":"/static/view/project_3D/index.html?name=simpleShop","imgSrc":"/static/portfolio/img/simpleShop_thumb.png","category":"store personal responsive"},
+      {"name":"简易博客系统","href":"/static/view/project_3D/index.html?name=simpleBlog","imgSrc":"/static/portfolio/img/simpleBlog_thumb.png","category":"personal"},
+      {"name":"小米官网首页","href":"/static/Projects/mi/index.html","imgSrc":"/static/portfolio/img/mi_thumb.png","category":"station store personal"},
+      {"name":"俄罗斯方块PC版","href":"/static/Projects/tetris/tetrisPC.html","imgSrc":"/static/portfolio/img/tetris_thumb.png","category":"game personal"},
+      {"name":"飞机大战（PC+移动）","href":"/static/Projects/plane/index.html","imgSrc":"/static/portfolio/img/plane_thumb.png","category":"game personal"},
+      {"name":"开饭啦WEB","href":"http://liliuzhu.applinzi.com","imgSrc":"/static/portfolio/img/web_thumb.png","category":"store responsive personal"},
+      {"name":"京东首页","href":"/static/Projects/jd/jd_index/jd_index.html","imgSrc":"/static/portfolio/img/jd_index_thumb.png","category":"station store personal"},
+      {"name":"2048（PC+移动）","href":"/static/Projects/2048/2048All.html","imgSrc":"/static/portfolio/img/2048_thumb.png","category":"game personal"},
+      {"name":"京东用户中心","href":"/static/Projects/jd/user_center/UserCenter.html","imgSrc":"/static/portfolio/img/jd_userCenter_thumb.png","category":"station store personal"},
+      {"name":"京东详情页","href":"/static/Projects/jd/jd_detail/jd_detail.html","imgSrc":"/static/portfolio/img/jd_detail_thumb.png","category":"station store personal"},
+      {"name":"俄罗斯方块（PC+移动）","href":"/static/Projects/tetris/tetrisAll.html","imgSrc":"/static/portfolio/img/tetris_thumb.png","category":"game personal"},
+      {"name":"intel官网首页","href":"/static/Projects/intel/index.html","imgSrc":"/static/portfolio/img/intel_thumb.png","category":"responsive station personal"},
+      {"name":"2048PC版","href":"/static/Projects/2048/2048PC.html","imgSrc":"/static/portfolio/img/2048_thumb.png","category":"game personal"},
+      {"name":"开饭啦APP","href":"/static/view/kaiFanLaApp/kaiFanLaApp.html","imgSrc":"/static/portfolio/img/app_thumb.png","category":"webApp responsive store personal"}
+    ]
+  }
+}

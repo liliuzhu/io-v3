@@ -1,0 +1,178 @@
+{
+    "status": 0,
+    "result": {
+        "case": {
+            "webUrl": "",
+            "title": "案件管理系统",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png"
+            ],
+            "downloadApp": ""
+        },
+        "caseApp": {
+            "webUrl": "",
+            "is_vertical": true,
+            "title": "案件管理系统移动端",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png",
+                "8.png",
+                "9.png",
+                "10.png",
+                "11.png",
+                "12.png",
+                "13.png",
+                "14.png",
+                "15.png",
+                "16.png"
+            ],
+            "downloadApp": "http://7zd9o0.com1.z0.glb.clouddn.com/a80dcde5e7fce2f99296688bdfb3eaa9_d"
+        },
+        "meeting": {
+            "webUrl": "",
+            "title": "无纸化会议系统",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png",
+                "8.png",
+                "9.png",
+                "10.png",
+                "11.png",
+                "12.png"
+            ],
+            "downloadApp": ""
+        },
+        "startUp": {
+            "webUrl": "",
+            "title": "创业之家-创业实训平台",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png"
+            ],
+            "downloadApp": ""
+        },
+        "career": {
+            "webUrl": "http://123.56.239.224/career",
+            "title": "生涯发展指导信息化平台",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png"
+            ],
+            "downloadApp": ""
+        },
+        "baolimingwei": {
+            "webUrl": "",
+            "title": "宝利明威工单系统",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png"
+            ],
+            "downloadApp": ""
+        },
+        "hanxingda": {
+            "webUrl": "",
+            "title": "瀚星达项目管理系统",
+            "images": [
+                "1.png",
+                "2.png"
+            ],
+            "downloadApp": ""
+        },
+        "kaiFanLaApp": {
+            "webUrl": "",
+            "title": "开饭啦App",
+            "images": [
+                "1.jpg"
+            ],
+            "downloadApp": "./projectsImages/kaiFanLaApp/kaifanla.apk"
+        },
+        "elm2017": {
+            "webUrl": "http://liliuzhu.gitee.io/vueexample/elm/dist",
+            "is_vertical": true,
+            "title": "模仿饿了么2017版",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png",
+                "8.png",
+                "9.png",
+                "10.png",
+                "11.png",
+                "12.png",
+                "13.png"
+            ],
+            "downloadApp": ""
+        },
+        "elm2016": {
+            "webUrl": "http://liliuzhu.gitee.io/vueexample/seller/dist",
+            "is_vertical": true,
+            "title": "模仿饿了么2016版商家页",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png"
+            ],
+            "downloadApp": ""
+        },
+        "simpleShop": {
+            "webUrl": "",
+            "title": "简易商城系统",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png"
+            ],
+            "downloadApp": ""
+        },
+        "simpleBlog": {
+            "webUrl": "",
+            "title": "简易博客系统",
+            "images": [
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png"
+            ],
+            "downloadApp": ""
+        }
+    }
+}
